@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wuijanwu.love.mylove.test.MainActivity">
+
+    <com.romainpiel.shimmer.ShimmerTextView
+        android:id="@+id/shimmer_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/name"
+        android:textColor="@color/colorAccent"
+        android:textSize="35sp" />
+
+    <com.wuijanwu.love.mylove.test.HeartView
+        android:visibility="gone"
+        android:id="@+id/heart_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <com.wuijanwu.love.mylove.DirectionController
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/badge_view"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/bga_pp_shape_badge"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="1"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>
